@@ -1,5 +1,6 @@
 const db = require('express').Router();
 const {readFromFile, readAndAppend} = require('../helpers/fsUtils');
+const uuid = require('../helpers/uuid');
 
 db.get('/notes', (req, res) => {
     console.info(`${req.method} request received for note`);
@@ -19,7 +20,8 @@ const {title, text} = req.body;
     // Variable for the object we will save
     const newNote = {
         title,
-        text
+        text,
+        id: uuid(),
     };
   
     readAndAppend(newNote, './db/db.json');

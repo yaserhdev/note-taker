@@ -45,6 +45,4 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ```
 
 
-Application available for download at: https://github.com/yaserhdev/note-taker
-
-Demo video of application available at: 
+Live application: https://safe-plateau-70245-4476d7b4da08.herokuapp.com/ 
